@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_weight="97"
+        android:background="@color/white"
+        android:id="@+id/linearChartImport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_weight="0.1"
+        android:id="@+id/btnPrintPDF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/circle_button"
+        android:backgroundTint="@color/import_ticket"
+        android:fontFamily="@font/hachi"
+        android:text="Print PDF"
+        android:textSize="15dp" />
+
+</LinearLayout>

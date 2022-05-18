@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#A7FFEB">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" GỬI MAIL XÁC NHẬN "
+        android:textColor="@color/teal_700"
+        android:fontFamily="@font/alice"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edt_send_password_reset_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email Send Password"
+        android:minHeight="48dp"></EditText>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_send_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button1"/>
+
+
+</LinearLayout>

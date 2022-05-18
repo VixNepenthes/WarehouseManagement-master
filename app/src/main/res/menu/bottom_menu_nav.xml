@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item_warehouses_management"
+        android:title="Quản lý kho"
+        android:icon="@drawable/warehouse_button"/>
+
+    <item android:id="@+id/item_import_ticket"
+        android:title="Nhập kho"
+        android:icon="@drawable/import_button"/>
+
+    <item android:id="@+id/item_export_ticket"
+        android:title="Xuất kho"
+        android:icon="@drawable/export_button"/>
+
+    <item android:id="@+id/item_add_product"
+        android:title="Thêm sản phẩm"
+        android:icon="@drawable/add_button"/>
+
+</menu>

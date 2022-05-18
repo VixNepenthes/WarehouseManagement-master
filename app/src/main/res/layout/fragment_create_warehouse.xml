@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/triangle_radius"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hachi"
+            android:text="Tên nhà kho"
+            android:textColor="#14232d"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edt_create_warehouse_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:fontFamily="@font/hachi"
+            android:hint="Nhập tên nhà kho"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/triangle_radius"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hachi"
+            android:text="Địa chỉ"
+            android:textColor="#14232d"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edt_create_warehouse_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:fontFamily="@font/hachi"
+            android:hint="Nhập địa chỉ"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit_new_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/hachi"
+            android:background="@drawable/custom_button"
+            android:text="Tạo"
+            android:textStyle="normal"
+            android:enabled="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_new_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/hachi"
+            android:text="Hủy"
+            android:textStyle="normal"
+            android:enabled="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

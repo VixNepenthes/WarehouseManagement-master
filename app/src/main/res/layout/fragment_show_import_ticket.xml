@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/triangle_radius"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Chọn Kho: "
+            android:textColor="#14232d"
+            android:textSize="16dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spiner_choose_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:dropDownVerticalOffset="36dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal"
+            android:isScrollContainer="true"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_import_ticket_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+    <FrameLayout
+        android:id="@+id/fragment_show_import_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

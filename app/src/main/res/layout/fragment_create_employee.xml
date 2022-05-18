@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/triangle_radius"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên nhân viên"
+            android:textColor="#14232d"
+            android:textSize="18dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edt_create_employee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:hint="Nhập tên nhân viên"
+            android:inputType="text"
+            android:maxLines="1"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/triangle_radius"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textColor="#14232d"
+            android:textSize="18dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edt_create_employee_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#fff"
+            android:hint="Nhập SĐT"
+            android:inputType="number"
+            android:maxLines="1"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit_new_employee"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal"
+            android:text="Tạo"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button"
+            android:textColor="#fff"
+            android:enabled="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_cancel_new_employee"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/hachi"
+            android:textStyle="normal"
+            android:background="@drawable/custom_button2"
+            android:layout_marginTop="10dp"
+            android:text="Hủy"
+            android:textColor="#fff"
+            android:enabled="true"/>
+    </LinearLayout>
+
+
+</LinearLayout>

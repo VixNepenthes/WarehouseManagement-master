@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/dashboard_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/triangle_radius"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingTop="50dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_dancing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/dancing"
+                    android:stateListAnimator="@null"
+                    android:text="Dancing"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btn_opensan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/opensan"
+                    android:stateListAnimator="@null"
+                    android:text="Opensan"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+
+                <Button
+                    android:id="@+id/btn_itim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/itim"
+                    android:stateListAnimator="@null"
+                    android:text="Itim"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/_warehouse" />
+
+                <Button
+                    android:id="@+id/btn_instock"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="QUẢN LÝ SẢN PHẨM"
+
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/inventory" />
+
+                <Button
+                    android:id="@+id/btn_tickets_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="PHIẾU NHẬP/XUẤT KHO"
+
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/monitoring" />
+
+                <Button
+                    android:id="@+id/btn_warehouse_management"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="QUẢN LÝ KHO"
+
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_4"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/staff" />
+
+                <Button
+                    android:id="@+id/btn_employee_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="QUẢN LÝ NHÂN VIÊN"
+
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_5"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/customer" />
+
+                <Button
+                    android:id="@+id/btn_customer_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="THÔNG TIN KHÁCH HÀNG"
+
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_main_6"
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/triangle_radius"
+                android:backgroundTint="@color/primaryColor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/triangle_radius_none_border"
+                    android:backgroundTint="#fff"
+                    android:padding="8dp"
+                    android:src="@drawable/info" />
+
+                <Button
+                    android:id="@+id/btn_supplier_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="@color/primaryColor"
+                    android:fontFamily="@font/hachi"
+                    android:stateListAnimator="@null"
+                    android:text="NHÀ CUNG CẤP"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_dashboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
+
